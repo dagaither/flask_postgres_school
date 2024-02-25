@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student and Teacher Data</title>
+</head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            font-family: 'Courier New';
+            font-size: 2vw;
+        }
+        h1 {
+            color: white;
+            font-size: 4vw;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+        a:visited {
+            color: white;
+        }
+
+        .card {
+            background-color: darkslategrey;
+            font-size: 2vw;
+            width: 25vw;
+            height: 5vw;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: calc(2vw + 10px);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* text-align: center; */
+            /* cursor: pointer; */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* width: 20vw;
+            height: 5vw;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center; */
+        }
+
+    </style>
+<body>
+    <h1> School Database Data </h1>
+    <div class="container">
+    <a href="http://127.0.0.1:8000/api/v1/students/"><div class="card"><strong>Student Data</strong></div></a><br/>
+    <a href="http://127.0.0.1:8000/api/v1/teachers/"><div class="card"><strong>Teacher Data</strong></div></a><br/>
+    <a href="http://127.0.0.1:8000/api/v1/subjects/"><div class="card"><strong>Subject Data</strong></div></a><br/>
+    </div>
+</body>
+</html>
